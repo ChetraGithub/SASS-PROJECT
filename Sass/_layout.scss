@@ -1,0 +1,9 @@
+@import 'global/nav';
+@import 'global/container';
+@import 'global/footer';
+@import 'global/variables';
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $mainfont;
+}

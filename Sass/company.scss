@@ -1,0 +1,26 @@
+@import 'components/breakpoint';
+@mixin centerItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  height: auto;
+  flex-basis: 20%;
+  @include centerItem;
+  justify-content: center;
+  a {
+    width: 100%;
+    @include centerItem;
+    .card-title {
+      margin: 0;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+}
+@include responsive('mobile') {
+  .card {
+    flex-basis: 10% !important;
+  }
+}

@@ -1,0 +1,35 @@
+@import 'components/breakpoint';
+@import 'global/variables';
+.container {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $lightGray;
+  .container-title {
+    width: 70%;
+    padding: 100px 0px;
+    hr {
+      margin: 20px 0px 20px 0px;
+    }
+    p, tel {
+      font-size: 1.1rem;
+    }
+    .tel {
+      margin-top: 10px;
+      display: flex;
+      .call {
+        font-size: 1.2rem;
+      }
+
+      p {
+        margin-left: 5px;
+      }
+    }
+  }
+  @include responsive('mobile') {
+    .container-title {
+      width: 90%;
+    }
+  }
+}
